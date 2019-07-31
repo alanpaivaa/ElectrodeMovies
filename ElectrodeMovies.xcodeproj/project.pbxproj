@@ -12,6 +12,7 @@
 		F358872922F0E44E00369B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358872722F0E44E00369B59 /* Main.storyboard */; };
 		F358872B22F0E44E00369B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358872A22F0E44E00369B59 /* Assets.xcassets */; };
 		F358872E22F0E44E00369B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358872C22F0E44E00369B59 /* LaunchScreen.storyboard */; };
+		F358878D22F223D300369B59 /* ElectrodeContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358878C22F223D300369B59 /* ElectrodeContainer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F358872A22F0E44E00369B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F358872D22F0E44E00369B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F358872F22F0E44E00369B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F358878C22F223D300369B59 /* ElectrodeContainer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElectrodeContainer.framework; path = Carthage/Build/iOS/ElectrodeContainer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F358878D22F223D300369B59 /* ElectrodeContainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				F358872222F0E44E00369B59 /* ElectrodeMovies */,
 				F358872122F0E44E00369B59 /* Products */,
+				F358878B22F223D300369B59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +68,14 @@
 			path = ElectrodeMovies;
 			sourceTree = "<group>";
 		};
+		F358878B22F223D300369B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F358878C22F223D300369B59 /* ElectrodeContainer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +86,7 @@
 				F358871C22F0E44E00369B59 /* Sources */,
 				F358871D22F0E44E00369B59 /* Frameworks */,
 				F358871E22F0E44E00369B59 /* Resources */,
+				F358878E22F223DD00369B59 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +142,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F358878E22F223DD00369B59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ElectrodeContainer.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F358871C22F0E44E00369B59 /* Sources */ = {
@@ -284,6 +318,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ElectrodeMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +340,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ElectrodeMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

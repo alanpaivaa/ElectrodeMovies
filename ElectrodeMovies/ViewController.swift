@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import ElectrodeContainer
 
 class ViewController: UIViewController {
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    let movieListMiniAppViewController = ElectrodeReactNative.sharedInstance().miniApp(withName: "MovieListMiniApp", properties: nil)
+    movieListMiniAppViewController.view.frame = view.bounds
+    view.addSubview(movieListMiniAppViewController.view)
+    movieListMiniAppViewController.didMove(toParent: self)
   }
-
-
 }
 
