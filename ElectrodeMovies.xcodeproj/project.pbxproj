@@ -13,6 +13,7 @@
 		F358872B22F0E44E00369B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358872A22F0E44E00369B59 /* Assets.xcassets */; };
 		F358872E22F0E44E00369B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358872C22F0E44E00369B59 /* LaunchScreen.storyboard */; };
 		F358878D22F223D300369B59 /* ElectrodeContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358878C22F223D300369B59 /* ElectrodeContainer.framework */; };
+		F37D042722F3CF7D00587957 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D042622F3CF7D00587957 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F358872D22F0E44E00369B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F358872F22F0E44E00369B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F358878C22F223D300369B59 /* ElectrodeContainer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElectrodeContainer.framework; path = Carthage/Build/iOS/ElectrodeContainer.framework; sourceTree = "<group>"; };
+		F37D042622F3CF7D00587957 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				F358872A22F0E44E00369B59 /* Assets.xcassets */,
 				F358872C22F0E44E00369B59 /* LaunchScreen.storyboard */,
 				F358872F22F0E44E00369B59 /* Info.plist */,
+				F37D042622F3CF7D00587957 /* MovieDetailViewController.swift */,
 			);
 			path = ElectrodeMovies;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F358872622F0E44E00369B59 /* ViewController.swift in Sources */,
+				F37D042722F3CF7D00587957 /* MovieDetailViewController.swift in Sources */,
 				F358872422F0E44E00369B59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
